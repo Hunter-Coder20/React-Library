@@ -1,33 +1,36 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-const Book = () => {
+const Book = ({ book, index }) => {
   return (
     <div className="book">
       <a href="">
         <figure className="book__img--wrapper">
-          <img
-            src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/homunculusvol1.png"
-            alt=""
-            className="book__img"
-          />
+          <img src={book.url} alt="" className="book__img" />
         </figure>
       </a>
       <div className="book__title">
         <a href="" className="book__title--link">
-          Homunculus
+          {book.title}
         </a>
       </div>
       <div className="book__ratings">
-        <FontAwesomeIcon icon="star" />
-        <FontAwesomeIcon icon="star" />
-        <FontAwesomeIcon icon="star" />
-        <FontAwesomeIcon icon="star" />
-        <FontAwesomeIcon icon="star-half-alt" />
+        {
+        new Array(Math.floor(book.rating)).fill(0).map((_, index) => <FontAwesomeIcon icon="star" key={index} />)
+        } 
+        {
+          !Number.isInteger(book.rating) && <FontAwesomeIcon icon="star-half-alt" key={index} />
+        }
       </div>
       <div className="book__price">
-        <span className="book__price--normal">$15.00</span>
-        $10.00
+        {book.salePrice ? (
+          <>
+            <span className="book__price--normal">${book.originalPrice}</span>$
+            {book.salePrice}
+          </>
+        ) : (
+          book.originalPrice
+        )}
       </div>
     </div>
   );
