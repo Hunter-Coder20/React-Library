@@ -1,9 +1,9 @@
 import React from 'react';
-import Discounts from "../components/Discounted"
 import Explore from "../components/Explore"
 import Featured from "../components/Featured"
 import Highlights from "../components/Highlights"
 import Landing from "../components/Landing"
+import Discounted from '../components/Discounted';
 
 const Home = () => {
     return (
@@ -11,7 +11,7 @@ const Home = () => {
         <Landing />
         <Highlights />
         <Featured />
-        <Discounts />
+        <Discounted />
         <Explore />
         </>
     )
