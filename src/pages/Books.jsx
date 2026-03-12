@@ -12,7 +12,7 @@ const Books = ({ books: initialBooks }) => {
           .sort(
             (a, b) =>
               (a.salePrice || a.originalPrice) -
-              (a.salePrice || b.originalPrice),
+              (b.salePrice || b.originalPrice),
           ),
       );
     }
