@@ -4,6 +4,7 @@ import Featured from "../components/Featured"
 import Highlights from "../components/Highlights"
 import Landing from "../components/Landing"
 import Discounted from '../components/Discounted';
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Featured />
         <Discounted />
         <Explore />
+        <Link />
         </>
     )
 }
