@@ -8,9 +8,9 @@ const Discounted = () => {
         <div className="container">
             <div className="row">
                 <h2 className="section__title">
-                    Discount <span className="orange">Books</span>
+                    <span className="orange">Discount Books</span>
                 </h2>
-                <div className="books">
+                <div className="books orange">
                     {books
                     .filter(book => book.salePrice > 0)
                     .slice(0, 8)

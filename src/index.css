@@ -224,6 +224,26 @@ button:active {
   color: white;
 }
 
+/*
+
+HOME PAGE
+
+*/
+
+.home-page {
+  position: relative;
+}
+
+.home-page__dither {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.home-page__content {
+  position: relative;
+  z-index: 1;
+}
 
 /* 
 
@@ -321,7 +341,7 @@ HIGHLIGHTS
 }
 
 .highlight__img {
-  border: 2px solid #7342d65d;
+  border: 2px solid rgb(228, 153, 15);
   color: rgb(228, 153, 15);
   width: 100px;
   height: 100px;
@@ -414,10 +434,11 @@ FEATURES
 .book__title {
   font-size: 20px;
   margin-bottom: 8px;
+  color: rgb(228, 153, 15);
 }
 
 .book__title--link {
-  color: black;
+  color: rgb(228, 153, 15);
 }
 
 .book__ratings {

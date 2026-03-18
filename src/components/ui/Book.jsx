@@ -34,8 +34,8 @@ const Book = ({ book }) => {
               <img src={img.src} alt="" className="book__img" />
             </figure>
           </Link>
-          <div className="book__title">
-            <Link to={`/books/${book.id}`} className="book__title--link">
+          <div className="book__title orange">
+            <Link to={`/books/${book.id}`} className="book__title--link orange">
               {book.title}
             </Link>
           </div>

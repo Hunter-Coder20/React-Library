@@ -10,7 +10,9 @@ const Landing = () => {
           <div className="header__description">
             <h1>Welcome to the Strawhat Family</h1>
             <h2>
-              Find your favorites in <span className="orange">Strawhat Library</span>
+              <span className="orange">
+                Find your favorites in Strawhat Library
+              </span>
             </h2>
             <Link to="/books">
               <button className="btn">Browse books</button>

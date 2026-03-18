@@ -4,20 +4,22 @@ import Featured from "../components/Featured";
 import Highlights from "../components/Highlights";
 import Landing from "../components/Landing";
 import Discounted from "../components/Discounted";
-import { Link } from "react-router-dom";
 import Dither from "../components/Dither";
 
 const Home = () => {
   return (
-    <>
-      <Dither />
-      <Landing />
-      <Highlights />
-      <Featured />
-      <Discounted />
-      <Explore />
-      <Link />
-    </>
+    <div className="home-page">
+      <div className="home-page__dither" aria-hidden="true">
+        <Dither />
+      </div>
+      <div className="home-page__content">
+        <Landing />
+        <Highlights />
+        <Featured />
+        <Discounted />
+        <Explore />
+      </div>
+    </div>
   );
 };
 

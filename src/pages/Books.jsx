@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Book from "../components/ui/Book";
+import Dither from "../components/Dither";
 
 const Books = ({ books: initialBooks }) => {
   const [books, setBooks] = useState(initialBooks);
