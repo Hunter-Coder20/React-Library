@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/Library.svg'
+import Logo from '../assets/Strawhat  Library.png'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -13,7 +13,6 @@ const Footer = () => {
                 </figure>
                 </Link>
                 <div className="footer__list">
-                    <Link to="/" className="footer__link">Home</Link>
                     <span className="footer__link no-cursor">About</span>
                     <Link to="/books" className="footer__link">Books</Link>
                     <Link to="/cart" className="footer__link">Cart</Link>

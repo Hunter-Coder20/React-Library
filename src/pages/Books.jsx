@@ -38,7 +38,7 @@ const Books = ({ books: initialBooks }) => {
           <div className="books__container">
             <div className="row">
               <div className="books__header">
-                <h2 className="section__title books__header--title">
+                <h2 className="section__title books__header--title orange">
                   All Books
                 </h2>
                 <select
